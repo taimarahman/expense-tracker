@@ -1,3 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+// Layer 0: Base styles
+@layer base {}
+  
+  // Layer 1: Components styles
+  @layer components {}
+  
+  // Layer 2: Utilities styles
+  @layer utilities {}
+  
+  // More custom styles...
+  
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

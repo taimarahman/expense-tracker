@@ -8,7 +8,6 @@ import { ThemePalette } from '@angular/material/core';
 })
 export class AppComponent {
   title = 'expense-tracker';
-  color: ThemePalette = 'accent';
   checked = false;
   disabled = false;
 }
