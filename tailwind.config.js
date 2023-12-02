@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{html,ts,scss}",
   ],
   theme: {
+    fontFamily: {
+      'alumni': ['Alumni Sans', 'sans-serif']
+    },
     extend: {},
   },
   plugins: [],
