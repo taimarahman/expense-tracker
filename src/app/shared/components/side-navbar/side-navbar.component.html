@@ -1,10 +1,9 @@
-
-<div class="h-full relative z-0">
-    <div class="w-16 h-16 rounded-full flex-center  bg-primary -z-10 absolute top-4 -right-8">
-        <button (click)="navCollapse=!navCollapse"><i class="fa-solid fa-bars text-white -mr-6"></i></button>
-    </div>
-    <div class="w-72 h-full bg-gradient rounded-r-2xl py-4 relative  z-0" [ngClass]="navCollapse ? '-mr-72': ''">
-        <div class="w-full h-full z-10">
+<div class="w-16 h-16 rounded-full flex-center  bg-primary absolute top-4 -right-8">
+    <button (click)="navCollapse=!navCollapse" class="w-full h-full focus:outline-0"><i class="fa-solid fa-bars text-white -mr-6"></i></button>
+</div>
+<div class="w-72 h-full relative transition-all duration-200" [ngClass]="navCollapse ? '-ml-72': ''">
+    <div class="w-full h-full bg-gradient rounded-r-2xl py-4 relative" >
+        <div class="w-full h-full ">
             <!-- LOGO -->
             <div class="w-full flex items-center justify-center py-3">
                 <div class="w-10 mr-2">
