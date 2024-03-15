@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
+  hasIncreased: boolean = true;
+  changePercentege:number = 0;
 }

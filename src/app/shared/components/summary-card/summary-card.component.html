@@ -1,0 +1,28 @@
+<div class="px-8 py-6 rounded-lg bg-white shadow-sm">
+    <div class="space-y-2">
+        <div class="flex">
+            <span class="w-full flex">
+                <i class="w-12 h-12 rounded-full flex-center text-lg text-white bg-primary mr-4 fa-solid {{icon}}"></i>
+                <div>
+                    <p class="font-semibold text-xl">{{title}}</p>
+                    <p class="font-semibold text-xs text-primary">This month</p>
+                </div>
+            </span>
+            <span>
+                <i class="w-5 h-5 rounded-full flex-center text-xs text-white bg-primary fa-solid fa-plus"></i>
+            </span>
+        </div>
+        <div class="text-end">
+            <p class="font-alumni text-4xl font-semibold"><span class="">$</span>{{amount}}</p>
+            <p class="font-semibold text-xs" [ngClass]="hasIncreased ? 'text-green-600' : 'text-red-600'">
+                <ng-container *ngIf="hasIncreased; else decreased">
+                    <i class="fa-solid fa-sort-up text-sm mr-1"></i>
+                </ng-container>    
+                <span>{{percentage}}%</span> than last month
+            </p>
+            <ng-template #decreased>
+                <i class="fa-solid fa-sort-down text-sm mr-1"></i>
+            </ng-template>
+        </div>
+    </div>
+</div>

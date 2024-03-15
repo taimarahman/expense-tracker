@@ -15,6 +15,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SideNavbarComponent } from './shared/components/side-navbar/side-navbar.component';
 import { LoginComponent } from './pages/login/login.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+import { SummaryCardComponent } from './shared/components/summary-card/summary-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
     DashboardComponent,
     SideNavbarComponent,
     LoginComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    SummaryCardComponent
   ],
   imports: [
     BrowserModule,

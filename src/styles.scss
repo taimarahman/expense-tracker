@@ -12,6 +12,7 @@ $color2: #a2c8db;
 $color3: #f2f7fd;
 $color4: #fc834a;
 $color5: #0b0b23;
+$color6: #e3eaef;
 
 // Layer 0: Base styles
 @layer base {}
@@ -23,6 +24,7 @@ $color5: #0b0b23;
 @layer utilities {
   .bg-primary{ background-color: $color1  }
   .bg-primary-300{ background-color: $color2  }
+  .bg-primary-200{ background-color: $color6  }
   .bg-primary-100{ background-color: $color3  }
   .bg-secondary{ background-color: $color4 }
   .bg-dark{ background-color: $color5 }
