@@ -16,6 +16,8 @@ import { SideNavbarComponent } from './shared/components/side-navbar/side-navbar
 import { LoginComponent } from './pages/login/login.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { SummaryCardComponent } from './shared/components/summary-card/summary-card.component';
+import { ReceiptComponent } from './shared/components/receipt/receipt.component';
+import { ExpensesComponent } from './pages/expenses/expenses.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SummaryCardComponent } from './shared/components/summary-card/summary-c
     SideNavbarComponent,
     LoginComponent,
     UserProfileComponent,
-    SummaryCardComponent
+    SummaryCardComponent,
+    ReceiptComponent,
+    ExpensesComponent
   ],
   imports: [
     BrowserModule,

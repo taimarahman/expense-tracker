@@ -41,6 +41,10 @@ $color6: #e3eaef;
   .menu-list  li {
     @apply flex items-center justify-start border-[1px] pl-6 pr-4 rounded-full cursor-pointer transition-colors ease-in hover:bg-white hover:text-primary
   }
+
+  .page-setup {
+    @apply h-full mx-8 my-8;
+  }
 }
   
   // More custom styles...
