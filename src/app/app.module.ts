@@ -8,7 +8,11 @@ import { AppComponent } from './app.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
-import {MatIconModule} from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+import { ReactiveFormsModule } from '@angular/forms';
 // COMPONENT
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -18,6 +22,10 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
 import { SummaryCardComponent } from './shared/components/summary-card/summary-card.component';
 import { ReceiptComponent } from './shared/components/receipt/receipt.component';
 import { ExpensesComponent } from './pages/expenses/expenses.component';
+import { DatepickerComponent } from './shared/mat-component/datepicker/datepicker.component';
+import { DatePipe } from '@angular/common';
+import { InputFieldComponent } from './shared/mat-component/input-field/input-field.component';
+// import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,7 +36,9 @@ import { ExpensesComponent } from './pages/expenses/expenses.component';
     UserProfileComponent,
     SummaryCardComponent,
     ReceiptComponent,
-    ExpensesComponent
+    ExpensesComponent,
+    DatepickerComponent,
+    InputFieldComponent
   ],
   imports: [
     BrowserModule,
@@ -39,10 +49,15 @@ import { ExpensesComponent } from './pages/expenses/expenses.component';
     MatButtonModule,
     MatGridListModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    DatePipe,
   ],
   bootstrap: [AppComponent]
 })
