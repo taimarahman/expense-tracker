@@ -7,12 +7,12 @@
 @import 'tailwindcss/utilities';
 
 
-$color1: #4b7e93;
-$color2: #a2c8db;
-$color3: #f2f7fd;
-$color4: #fc834a;
-$color5: #0b0b23;
-$color6: #e3eaef;
+// $color1: #4b7e93;
+// $color2: #a2c8db;
+// $color3: #f2f7fd;
+// $color4: #fc834a;
+// $color5: #0b0b23;
+// $color6: #e3eaef;
 
 // Layer 0: Base styles
 @layer base {}
@@ -22,13 +22,13 @@ $color6: #e3eaef;
 
 // Layer 2: Utilities styles
 @layer utilities {
-  .bg-primary{ background-color: $color1  }
-  .bg-primary-300{ background-color: $color2  }
-  .bg-primary-200{ background-color: $color6  }
-  .bg-primary-100{ background-color: $color3  }
-  .bg-secondary{ background-color: $color4 }
-  .bg-dark{ background-color: $color5 }
-  .text-primary{color: $color1}
+  // .bg-primary{ background-color: $color1  }
+  // .bg-primary-300{ background-color: $color2  }
+  // .bg-primary-200{ background-color: $color6  }
+  // .bg-primary-100{ background-color: $color3  }
+  // .bg-secondary{ background-color: $color4 }
+  // .bg-dark{ background-color: $color5 }
+  // .text-primary{color: $color1}
 
   .bg-gradient {
     background: rgb(166,196,211);
@@ -39,17 +39,39 @@ $color6: #e3eaef;
 
   .menu-list { @apply px-4 grid grid-cols-1 gap-2; }
   .menu-list  li {
-    @apply flex items-center justify-start border-[1px] pl-6 pr-4 rounded-full cursor-pointer transition-colors ease-in hover:bg-white hover:text-primary
+    @apply flex items-center justify-start border-[1px] pl-6 pr-4 rounded-full cursor-pointer transition-colors ease-in  hover:bg-white hover:text-primary-600;
   }
 
   .page-setup {
-    @apply h-full mx-8 my-8;
+    @apply h-full px-8 py-8;
   }
 
 
 
 
+// :host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+//     @apply bg-slate-100;
+// }
+// :host ::ng-deep .mat-mdc-form-field-infix {
+//     @apply flex min-h-0;
+// }
+// :host ::ng-deep .mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+//     @apply py-0 ;
+// }
 
+// :host ::ng-deep .mat-mdc-form-field-flex{
+//     @apply h-12 items-center;
+// }
+// :host ::ng-deep .mdc-text-field--filled {
+//     @apply rounded-t-lg;
+// }
+// :host ::ng-deep .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+//     @apply top-2/4;
+// } 
+
+// :host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
+//     @apply border-b-blue-400
+// }
 
 }
   
@@ -71,8 +93,6 @@ body {
 
 
 *{box-sizing: border-box;}
-
-
 
 // SCROLLBAR
 ::-webkit-scrollbar {

@@ -1,10 +1,11 @@
-// :host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
-//     @apply bg-white ;
-// }
 
-// :host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input{
-//     @apply text-black;
-// }
+// // :host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+// //     @apply bg-white ;
+// // }
+
+// // :host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input{
+// //     @apply text-black;
+// // }
 
 :host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
     @apply bg-slate-100;
