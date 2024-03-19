@@ -12,7 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
 // COMPONENT
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -25,6 +26,7 @@ import { ExpensesComponent } from './pages/expenses/expenses.component';
 import { DatepickerComponent } from './shared/mat-component/datepicker/datepicker.component';
 import { DatePipe } from '@angular/common';
 import { InputFieldComponent } from './shared/mat-component/input-field/input-field.component';
+import { MatSelectComponent } from './shared/mat-component/mat-select/mat-select.component';
 // import { CommonModule } from '@angular/common';
 
 @NgModule({
@@ -38,13 +40,17 @@ import { InputFieldComponent } from './shared/mat-component/input-field/input-fi
     ReceiptComponent,
     ExpensesComponent,
     DatepickerComponent,
-    InputFieldComponent
+    InputFieldComponent,
+    MatSelectComponent
   ],
   imports: [
+  // Angular Modules
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
 
-
+  // Material Modules
     MatSlideToggleModule,
     MatButtonModule,
     MatGridListModule,
@@ -53,7 +59,8 @@ import { InputFieldComponent } from './shared/mat-component/input-field/input-fi
     MatDatepickerModule,
     MatInputModule,
     MatNativeDateModule,
-    ReactiveFormsModule,
+
+    MatSelectModule,
   ],
   providers: [
     provideClientHydration(),

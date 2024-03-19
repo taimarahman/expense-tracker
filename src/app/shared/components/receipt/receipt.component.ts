@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './receipt.component.scss'
 })
 export class ReceiptComponent {
-  date: string = '';
+  date: string='';
+  input: string = '';
+  value: string = '';
 }

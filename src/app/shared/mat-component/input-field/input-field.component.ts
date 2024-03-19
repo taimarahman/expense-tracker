@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-input-field',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './input-field.component.scss'
 })
 export class InputFieldComponent {
-
+    @Input() field: string = '';
+  
 }
