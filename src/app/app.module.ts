@@ -16,6 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 // COMPONENT
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SideNavbarComponent } from './shared/components/side-navbar/side-navbar.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -46,7 +48,9 @@ import { MatSelectComponent } from './shared/mat-component/mat-select/mat-select
   imports: [
   // Angular Modules
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
 
