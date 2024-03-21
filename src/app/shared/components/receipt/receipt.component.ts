@@ -13,18 +13,19 @@ export class ReceiptComponent {
   input: string = '';
   value: string = '';
 
-  constructor(private http: ApiService){}
+  constructor(private apiService: ApiService){}
 
   ngOnInit(){
     this.getCategoryList();  
   }
 
   getCategoryList(){
-    this.http.getCategories().subscribe(response => {
+    this.apiService.getCategories().subscribe(
+      response => {
       console.log(response);
-    },
-    error => {
-      console.log(error);
-    })
+      },
+      error => {
+        console.log(error);
+      })
   }
 }
