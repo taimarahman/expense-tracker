@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../../services/api.service';
 import { tap, catchError } from 'rxjs/operators';
+import { Router } from '@angular/router';
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,7 +11,7 @@ import { tap, catchError } from 'rxjs/operators';
 })
 export class LoginComponent {
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService, private router: Router) { }
   
   ngOnInit() {
   }
@@ -24,6 +27,7 @@ export class LoginComponent {
     this.apiService.login(user).pipe(tap(
       response => {
         console.log(response);
+        this.router.navigate(['/expenses/taima']);
       }),
       catchError(error => {
         console.log(error);
