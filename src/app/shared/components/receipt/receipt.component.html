@@ -1,6 +1,6 @@
 <div class="px-8 py-6 rounded-lg bg-white shadow-sm">
     <div class="">
-        <button mat-mini-fab class="!bg-primary-600" >
+        <button mat-mini-fab class="!bg-primary-600" (click)="getCategoryList()">
           <mat-icon class="text-white">add</mat-icon>
         </button>
         <app-datepicker [date]="date"></app-datepicker>

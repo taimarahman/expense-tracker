@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiService } from '../../../services/api.service';
+import { ApiService } from '../../services/api.service';
 import { error, log } from 'console';
 
 
@@ -16,7 +16,6 @@ export class ReceiptComponent {
   constructor(private apiService: ApiService){}
 
   ngOnInit(){
-    this.getCategoryList();  
   }
 
   getCategoryList(){

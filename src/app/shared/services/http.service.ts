@@ -7,7 +7,8 @@ import { Injectable } from '@angular/core';
 export class HttpService {
 
   private defaultHeader: HttpHeaders = new HttpHeaders({
-    'Content-Type' : 'application/json'
+    'Content-Type' : 'application/json',
+    'Authorization': 'Basic '+ btoa('taima:123')
   })
   
   constructor(private http: HttpClient) { }
