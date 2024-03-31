@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class MatSelectComponent {
   @Input() selectedValue: string = '';
+  @Input() label: string = '';
 
 
   foods: any[] = [

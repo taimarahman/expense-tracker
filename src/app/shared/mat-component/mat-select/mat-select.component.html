@@ -1,5 +1,5 @@
 <mat-form-field>
-    <mat-label>Favorite food</mat-label>
+    <mat-label>{{label}}</mat-label>
     <mat-select [(ngModel)]="selectedValue" name="food">
       @for (food of foods; track food) {
         <mat-option [value]="food.value">{{food.viewValue}}</mat-option>

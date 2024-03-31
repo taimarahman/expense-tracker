@@ -27,7 +27,7 @@ export class LoginComponent {
     this.apiService.login(user).pipe(tap(
       response => {
         console.log(response);
-        this.router.navigate(['/expenses/taima']);
+        this.router.navigate([`/expenses/${user.username}`]);
       }),
       catchError(error => {
         console.log(error);

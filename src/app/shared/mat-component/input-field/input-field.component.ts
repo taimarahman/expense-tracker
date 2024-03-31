@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class InputFieldComponent {
     @Input() field: string = '';
+    @Input() label: string = '';
   
 }
